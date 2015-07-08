@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26D9B3811B4D3AB100DE2983 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3801B4D3AB100DE2983 /* AppKit.framework */; };
+		26D9B3831B4D3AB100DE2983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3821B4D3AB100DE2983 /* Foundation.framework */; };
+		26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */; };
+		26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38A1B4D3AB100DE2983 /* XCServer.m */; };
+		26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26D9B37D1B4D3AB100DE2983 /* XCServer.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCServer.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D9B3801B4D3AB100DE2983 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		26D9B3821B4D3AB100DE2983 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		26D9B3861B4D3AB100DE2983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = XCServer.xcscheme; path = XCServer.xcodeproj/xcshareddata/xcschemes/XCServer.xcscheme; sourceTree = SOURCE_ROOT; };
+		26D9B3891B4D3AB100DE2983 /* XCServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCServer.h; sourceTree = "<group>"; };
+		26D9B38A1B4D3AB100DE2983 /* XCServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCServer.m; sourceTree = "<group>"; };
+		26D9B38C1B4D3AB100DE2983 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26D9B37B1B4D3AB100DE2983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D9B3811B4D3AB100DE2983 /* AppKit.framework in Frameworks */,
+				26D9B3831B4D3AB100DE2983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26D9B3741B4D3AB100DE2983 = {
+			isa = PBXGroup;
+			children = (
+				26D9B3841B4D3AB100DE2983 /* XCServer */,
+				26D9B37F1B4D3AB100DE2983 /* Frameworks */,
+				26D9B37E1B4D3AB100DE2983 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26D9B37E1B4D3AB100DE2983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B37D1B4D3AB100DE2983 /* XCServer.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26D9B37F1B4D3AB100DE2983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B3801B4D3AB100DE2983 /* AppKit.framework */,
+				26D9B3821B4D3AB100DE2983 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26D9B3841B4D3AB100DE2983 /* XCServer */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B3891B4D3AB100DE2983 /* XCServer.h */,
+				26D9B38A1B4D3AB100DE2983 /* XCServer.m */,
+				26D9B38C1B4D3AB100DE2983 /* NSObject_Extension.h */,
+				26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */,
+				26D9B3851B4D3AB100DE2983 /* Supporting Files */,
+			);
+			path = XCServer;
+			sourceTree = "<group>";
+		};
+		26D9B3851B4D3AB100DE2983 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B3861B4D3AB100DE2983 /* Info.plist */,
+				26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26D9B37C1B4D3AB100DE2983 /* XCServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D9B3911B4D3AB100DE2983 /* Build configuration list for PBXNativeTarget "XCServer" */;
+			buildPhases = (
+				26D9B3791B4D3AB100DE2983 /* Sources */,
+				26D9B37A1B4D3AB100DE2983 /* Resources */,
+				26D9B37B1B4D3AB100DE2983 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCServer;
+			productName = XCServer;
+			productReference = 26D9B37D1B4D3AB100DE2983 /* XCServer.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26D9B3751B4D3AB100DE2983 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = XingCheng;
+				TargetAttributes = {
+					26D9B37C1B4D3AB100DE2983 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 26D9B3781B4D3AB100DE2983 /* Build configuration list for PBXProject "XCServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26D9B3741B4D3AB100DE2983;
+			productRefGroup = 26D9B37E1B4D3AB100DE2983 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26D9B37C1B4D3AB100DE2983 /* XCServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26D9B37A1B4D3AB100DE2983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26D9B3791B4D3AB100DE2983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */,
+				26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26D9B38F1B4D3AB100DE2983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		26D9B3901B4D3AB100DE2983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		26D9B3921B4D3AB100DE2983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XCServer/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		26D9B3931B4D3AB100DE2983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XCServer/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26D9B3781B4D3AB100DE2983 /* Build configuration list for PBXProject "XCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D9B38F1B4D3AB100DE2983 /* Debug */,
+				26D9B3901B4D3AB100DE2983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D9B3911B4D3AB100DE2983 /* Build configuration list for PBXNativeTarget "XCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D9B3921B4D3AB100DE2983 /* Debug */,
+				26D9B3931B4D3AB100DE2983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26D9B3751B4D3AB100DE2983 /* Project object */;
+}
