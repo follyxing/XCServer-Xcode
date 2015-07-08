@@ -12,6 +12,10 @@
 		26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */; };
 		26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38A1B4D3AB100DE2983 /* XCServer.m */; };
 		26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */; };
+		26D9B3A01B4D3ACD00DE2983 /* OCFWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */; };
+		26D9B3A11B4D3ACD00DE2983 /* OCFWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */; };
+		26D9B3A21B4D3ACD00DE2983 /* OCFWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */; };
+		26D9B3A31B4D3ACD00DE2983 /* OCFWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,16 @@
 		26D9B38A1B4D3AB100DE2983 /* XCServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCServer.m; sourceTree = "<group>"; };
 		26D9B38C1B4D3AB100DE2983 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		26D9B3961B4D3ACD00DE2983 /* OCFWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServer.h; sourceTree = "<group>"; };
+		26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServer.m; sourceTree = "<group>"; };
+		26D9B3981B4D3ACD00DE2983 /* OCFWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerConnection.h; sourceTree = "<group>"; };
+		26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerConnection.m; sourceTree = "<group>"; };
+		26D9B39A1B4D3ACD00DE2983 /* OCFWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerPrivate.h; sourceTree = "<group>"; };
+		26D9B39B1B4D3ACD00DE2983 /* OCFWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest.h; sourceTree = "<group>"; };
+		26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerRequest.m; sourceTree = "<group>"; };
+		26D9B39D1B4D3ACD00DE2983 /* OCFWebServerRequest_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest_Types.h; sourceTree = "<group>"; };
+		26D9B39E1B4D3ACD00DE2983 /* OCFWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerResponse.h; sourceTree = "<group>"; };
+		26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +94,36 @@
 		26D9B3851B4D3AB100DE2983 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26D9B3941B4D3ACD00DE2983 /* Lib */,
 				26D9B3861B4D3AB100DE2983 /* Info.plist */,
 				26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26D9B3941B4D3ACD00DE2983 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B3951B4D3ACD00DE2983 /* OCFWebServer */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		26D9B3951B4D3ACD00DE2983 /* OCFWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				26D9B3961B4D3ACD00DE2983 /* OCFWebServer.h */,
+				26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */,
+				26D9B3981B4D3ACD00DE2983 /* OCFWebServerConnection.h */,
+				26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */,
+				26D9B39A1B4D3ACD00DE2983 /* OCFWebServerPrivate.h */,
+				26D9B39B1B4D3ACD00DE2983 /* OCFWebServerRequest.h */,
+				26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */,
+				26D9B39D1B4D3ACD00DE2983 /* OCFWebServerRequest_Types.h */,
+				26D9B39E1B4D3ACD00DE2983 /* OCFWebServerResponse.h */,
+				26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */,
+			);
+			path = OCFWebServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D9B3A11B4D3ACD00DE2983 /* OCFWebServerConnection.m in Sources */,
 				26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */,
+				26D9B3A01B4D3ACD00DE2983 /* OCFWebServer.m in Sources */,
 				26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */,
+				26D9B3A21B4D3ACD00DE2983 /* OCFWebServerRequest.m in Sources */,
+				26D9B3A31B4D3ACD00DE2983 /* OCFWebServerResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
