@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E416FC1B4F495A00486AA4 /* XCMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E416FB1B4F495A00486AA4 /* XCMainWindowController.xib */; };
 		2680AC031B4E599100D3E6C8 /* XCMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AC011B4E599100D3E6C8 /* XCMainWindowController.m */; };
-		2680AC041B4E599100D3E6C8 /* XCMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AC021B4E599100D3E6C8 /* XCMainWindowController.xib */; };
 		26D9B3811B4D3AB100DE2983 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3801B4D3AB100DE2983 /* AppKit.framework */; };
 		26D9B3831B4D3AB100DE2983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3821B4D3AB100DE2983 /* Foundation.framework */; };
 		26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */; };
@@ -21,9 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12E416FB1B4F495A00486AA4 /* XCMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCMainWindowController.xib; sourceTree = "<group>"; };
 		2680AC001B4E599100D3E6C8 /* XCMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMainWindowController.h; sourceTree = "<group>"; };
 		2680AC011B4E599100D3E6C8 /* XCMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMainWindowController.m; sourceTree = "<group>"; };
-		2680AC021B4E599100D3E6C8 /* XCMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XCMainWindowController.xib; path = ../Controller/XCMainWindowController.xib; sourceTree = "<group>"; };
 		26D9B37D1B4D3AB100DE2983 /* XCServer.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCServer.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D9B3801B4D3AB100DE2983 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		26D9B3821B4D3AB100DE2983 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -87,7 +87,7 @@
 		2680ABFF1B4E597300D3E6C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2680AC021B4E599100D3E6C8 /* XCMainWindowController.xib */,
+				12E416FB1B4F495A00486AA4 /* XCMainWindowController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */,
-				2680AC041B4E599100D3E6C8 /* XCMainWindowController.xib in Resources */,
+				12E416FC1B4F495A00486AA4 /* XCMainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
