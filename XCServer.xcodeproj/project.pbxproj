@@ -8,20 +8,92 @@
 
 /* Begin PBXBuildFile section */
 		12E416FC1B4F495A00486AA4 /* XCMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E416FB1B4F495A00486AA4 /* XCMainWindowController.xib */; };
+		263611271B53642B00BAB9C5 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636110A1B53642B00BAB9C5 /* GCDWebServer.m */; };
+		263611281B53642B00BAB9C5 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636110C1B53642B00BAB9C5 /* GCDWebServerConnection.m */; };
+		263611291B53642B00BAB9C5 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636110E1B53642B00BAB9C5 /* GCDWebServerFunctions.m */; };
+		2636112A1B53642B00BAB9C5 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611121B53642B00BAB9C5 /* GCDWebServerRequest.m */; };
+		2636112B1B53642B00BAB9C5 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611141B53642B00BAB9C5 /* GCDWebServerResponse.m */; };
+		2636112C1B53642B00BAB9C5 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611171B53642B00BAB9C5 /* GCDWebServerDataRequest.m */; };
+		2636112D1B53642B00BAB9C5 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611191B53642B00BAB9C5 /* GCDWebServerFileRequest.m */; };
+		2636112E1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636111B1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.m */; };
+		2636112F1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636111D1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.m */; };
+		263611301B53642B00BAB9C5 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611201B53642B00BAB9C5 /* GCDWebServerDataResponse.m */; };
+		263611311B53642B00BAB9C5 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611221B53642B00BAB9C5 /* GCDWebServerErrorResponse.m */; };
+		263611321B53642B00BAB9C5 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611241B53642B00BAB9C5 /* GCDWebServerFileResponse.m */; };
+		263611331B53642B00BAB9C5 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611261B53642B00BAB9C5 /* GCDWebServerStreamedResponse.m */; };
+		263611351B53644500BAB9C5 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263611341B53644500BAB9C5 /* CoreServices.framework */; };
+		263611371B53645200BAB9C5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263611361B53645200BAB9C5 /* SystemConfiguration.framework */; };
+		263611391B53645B00BAB9C5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263611381B53645B00BAB9C5 /* CFNetwork.framework */; };
+		2636113B1B53646700BAB9C5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636113A1B53646700BAB9C5 /* libz.dylib */; };
+		2636113D1B53646E00BAB9C5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636113C1B53646E00BAB9C5 /* libxml2.dylib */; };
+		2636114C1B53A14F00BAB9C5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611421B53A14F00BAB9C5 /* FMDatabase.m */; };
+		2636114D1B53A14F00BAB9C5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611441B53A14F00BAB9C5 /* FMDatabaseAdditions.m */; };
+		2636114E1B53A14F00BAB9C5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611461B53A14F00BAB9C5 /* FMDatabasePool.m */; };
+		2636114F1B53A14F00BAB9C5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611481B53A14F00BAB9C5 /* FMDatabaseQueue.m */; };
+		263611501B53A14F00BAB9C5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636114B1B53A14F00BAB9C5 /* FMResultSet.m */; };
+		263611531B53A1BC00BAB9C5 /* ConfigurationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611521B53A1BC00BAB9C5 /* ConfigurationItem.m */; };
+		263611561B53A26500BAB9C5 /* ConfigurationItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 263611551B53A26500BAB9C5 /* ConfigurationItems.m */; };
+		26451DCE1B53A9A100D75648 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26451DCD1B53A9A100D75648 /* libsqlite3.dylib */; };
 		2680AC031B4E599100D3E6C8 /* XCMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AC011B4E599100D3E6C8 /* XCMainWindowController.m */; };
 		26D9B3811B4D3AB100DE2983 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3801B4D3AB100DE2983 /* AppKit.framework */; };
 		26D9B3831B4D3AB100DE2983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9B3821B4D3AB100DE2983 /* Foundation.framework */; };
 		26D9B3881B4D3AB100DE2983 /* XCServer.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */; };
 		26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38A1B4D3AB100DE2983 /* XCServer.m */; };
 		26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */; };
-		26D9B3A01B4D3ACD00DE2983 /* OCFWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */; };
-		26D9B3A11B4D3ACD00DE2983 /* OCFWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */; };
-		26D9B3A21B4D3ACD00DE2983 /* OCFWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */; };
-		26D9B3A31B4D3ACD00DE2983 /* OCFWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12E416FB1B4F495A00486AA4 /* XCMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCMainWindowController.xib; sourceTree = "<group>"; };
+		263611091B53642B00BAB9C5 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		2636110A1B53642B00BAB9C5 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		2636110B1B53642B00BAB9C5 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		2636110C1B53642B00BAB9C5 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		2636110D1B53642B00BAB9C5 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		2636110E1B53642B00BAB9C5 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		2636110F1B53642B00BAB9C5 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		263611101B53642B00BAB9C5 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		263611111B53642B00BAB9C5 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		263611121B53642B00BAB9C5 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		263611131B53642B00BAB9C5 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		263611141B53642B00BAB9C5 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		263611161B53642B00BAB9C5 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		263611171B53642B00BAB9C5 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		263611181B53642B00BAB9C5 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		263611191B53642B00BAB9C5 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		2636111A1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		2636111B1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		2636111C1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		2636111D1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		2636111F1B53642B00BAB9C5 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		263611201B53642B00BAB9C5 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		263611211B53642B00BAB9C5 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		263611221B53642B00BAB9C5 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		263611231B53642B00BAB9C5 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		263611241B53642B00BAB9C5 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		263611251B53642B00BAB9C5 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		263611261B53642B00BAB9C5 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		263611341B53644500BAB9C5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		263611361B53645200BAB9C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		263611381B53645B00BAB9C5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2636113A1B53646700BAB9C5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2636113C1B53646E00BAB9C5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		263611411B53A14F00BAB9C5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		263611421B53A14F00BAB9C5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		263611431B53A14F00BAB9C5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		263611441B53A14F00BAB9C5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		263611451B53A14F00BAB9C5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		263611461B53A14F00BAB9C5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		263611471B53A14F00BAB9C5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		263611481B53A14F00BAB9C5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		263611491B53A14F00BAB9C5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		2636114A1B53A14F00BAB9C5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		2636114B1B53A14F00BAB9C5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		263611511B53A1BC00BAB9C5 /* ConfigurationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationItem.h; sourceTree = "<group>"; };
+		263611521B53A1BC00BAB9C5 /* ConfigurationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationItem.m; sourceTree = "<group>"; };
+		263611541B53A26500BAB9C5 /* ConfigurationItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationItems.h; sourceTree = "<group>"; };
+		263611551B53A26500BAB9C5 /* ConfigurationItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationItems.m; sourceTree = "<group>"; };
+		26451DCD1B53A9A100D75648 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		26451DD01B53AB9100D75648 /* XCServer.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCServer.db; sourceTree = "<group>"; };
 		2680AC001B4E599100D3E6C8 /* XCMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMainWindowController.h; sourceTree = "<group>"; };
 		2680AC011B4E599100D3E6C8 /* XCMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMainWindowController.m; sourceTree = "<group>"; };
 		26D9B37D1B4D3AB100DE2983 /* XCServer.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCServer.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,16 +105,6 @@
 		26D9B38A1B4D3AB100DE2983 /* XCServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCServer.m; sourceTree = "<group>"; };
 		26D9B38C1B4D3AB100DE2983 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		26D9B38D1B4D3AB100DE2983 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
-		26D9B3961B4D3ACD00DE2983 /* OCFWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServer.h; sourceTree = "<group>"; };
-		26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServer.m; sourceTree = "<group>"; };
-		26D9B3981B4D3ACD00DE2983 /* OCFWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerConnection.h; sourceTree = "<group>"; };
-		26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerConnection.m; sourceTree = "<group>"; };
-		26D9B39A1B4D3ACD00DE2983 /* OCFWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerPrivate.h; sourceTree = "<group>"; };
-		26D9B39B1B4D3ACD00DE2983 /* OCFWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest.h; sourceTree = "<group>"; };
-		26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerRequest.m; sourceTree = "<group>"; };
-		26D9B39D1B4D3ACD00DE2983 /* OCFWebServerRequest_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerRequest_Types.h; sourceTree = "<group>"; };
-		26D9B39E1B4D3ACD00DE2983 /* OCFWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFWebServerResponse.h; sourceTree = "<group>"; };
-		26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFWebServerResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26451DCE1B53A9A100D75648 /* libsqlite3.dylib in Frameworks */,
+				2636113D1B53646E00BAB9C5 /* libxml2.dylib in Frameworks */,
+				2636113B1B53646700BAB9C5 /* libz.dylib in Frameworks */,
+				263611391B53645B00BAB9C5 /* CFNetwork.framework in Frameworks */,
+				263611371B53645200BAB9C5 /* SystemConfiguration.framework in Frameworks */,
+				263611351B53644500BAB9C5 /* CoreServices.framework in Frameworks */,
 				26D9B3811B4D3AB100DE2983 /* AppKit.framework in Frameworks */,
 				26D9B3831B4D3AB100DE2983 /* Foundation.framework in Frameworks */,
 			);
@@ -58,6 +126,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263611071B53642B00BAB9C5 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				263611081B53642B00BAB9C5 /* Core */,
+				263611151B53642B00BAB9C5 /* Requests */,
+				2636111E1B53642B00BAB9C5 /* Responses */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		263611081B53642B00BAB9C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				263611091B53642B00BAB9C5 /* GCDWebServer.h */,
+				2636110A1B53642B00BAB9C5 /* GCDWebServer.m */,
+				2636110B1B53642B00BAB9C5 /* GCDWebServerConnection.h */,
+				2636110C1B53642B00BAB9C5 /* GCDWebServerConnection.m */,
+				2636110D1B53642B00BAB9C5 /* GCDWebServerFunctions.h */,
+				2636110E1B53642B00BAB9C5 /* GCDWebServerFunctions.m */,
+				2636110F1B53642B00BAB9C5 /* GCDWebServerHTTPStatusCodes.h */,
+				263611101B53642B00BAB9C5 /* GCDWebServerPrivate.h */,
+				263611111B53642B00BAB9C5 /* GCDWebServerRequest.h */,
+				263611121B53642B00BAB9C5 /* GCDWebServerRequest.m */,
+				263611131B53642B00BAB9C5 /* GCDWebServerResponse.h */,
+				263611141B53642B00BAB9C5 /* GCDWebServerResponse.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		263611151B53642B00BAB9C5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				263611161B53642B00BAB9C5 /* GCDWebServerDataRequest.h */,
+				263611171B53642B00BAB9C5 /* GCDWebServerDataRequest.m */,
+				263611181B53642B00BAB9C5 /* GCDWebServerFileRequest.h */,
+				263611191B53642B00BAB9C5 /* GCDWebServerFileRequest.m */,
+				2636111A1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.h */,
+				2636111B1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.m */,
+				2636111C1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.h */,
+				2636111D1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		2636111E1B53642B00BAB9C5 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				2636111F1B53642B00BAB9C5 /* GCDWebServerDataResponse.h */,
+				263611201B53642B00BAB9C5 /* GCDWebServerDataResponse.m */,
+				263611211B53642B00BAB9C5 /* GCDWebServerErrorResponse.h */,
+				263611221B53642B00BAB9C5 /* GCDWebServerErrorResponse.m */,
+				263611231B53642B00BAB9C5 /* GCDWebServerFileResponse.h */,
+				263611241B53642B00BAB9C5 /* GCDWebServerFileResponse.m */,
+				263611251B53642B00BAB9C5 /* GCDWebServerStreamedResponse.h */,
+				263611261B53642B00BAB9C5 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		2636113E1B539D6500BAB9C5 /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		263611401B53A14F00BAB9C5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				263611411B53A14F00BAB9C5 /* FMDatabase.h */,
+				263611421B53A14F00BAB9C5 /* FMDatabase.m */,
+				263611431B53A14F00BAB9C5 /* FMDatabaseAdditions.h */,
+				263611441B53A14F00BAB9C5 /* FMDatabaseAdditions.m */,
+				263611451B53A14F00BAB9C5 /* FMDatabasePool.h */,
+				263611461B53A14F00BAB9C5 /* FMDatabasePool.m */,
+				263611471B53A14F00BAB9C5 /* FMDatabaseQueue.h */,
+				263611481B53A14F00BAB9C5 /* FMDatabaseQueue.m */,
+				263611491B53A14F00BAB9C5 /* FMDB.h */,
+				2636114A1B53A14F00BAB9C5 /* FMResultSet.h */,
+				2636114B1B53A14F00BAB9C5 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		2680ABFC1B4E597300D3E6C8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +232,10 @@
 		2680ABFE1B4E597300D3E6C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				263611511B53A1BC00BAB9C5 /* ConfigurationItem.h */,
+				263611521B53A1BC00BAB9C5 /* ConfigurationItem.m */,
+				263611541B53A26500BAB9C5 /* ConfigurationItems.h */,
+				263611551B53A26500BAB9C5 /* ConfigurationItems.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +268,12 @@
 		26D9B37F1B4D3AB100DE2983 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26451DCD1B53A9A100D75648 /* libsqlite3.dylib */,
+				2636113C1B53646E00BAB9C5 /* libxml2.dylib */,
+				2636113A1B53646700BAB9C5 /* libz.dylib */,
+				263611381B53645B00BAB9C5 /* CFNetwork.framework */,
+				263611361B53645200BAB9C5 /* SystemConfiguration.framework */,
+				263611341B53644500BAB9C5 /* CoreServices.framework */,
 				26D9B3801B4D3AB100DE2983 /* AppKit.framework */,
 				26D9B3821B4D3AB100DE2983 /* Foundation.framework */,
 			);
@@ -134,6 +296,8 @@
 		26D9B3851B4D3AB100DE2983 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26451DD01B53AB9100D75648 /* XCServer.db */,
+				2636113E1B539D6500BAB9C5 /* db */,
 				26D9B3941B4D3ACD00DE2983 /* Lib */,
 				26D9B3861B4D3AB100DE2983 /* Info.plist */,
 				26D9B3871B4D3AB100DE2983 /* XCServer.xcscheme */,
@@ -144,26 +308,10 @@
 		26D9B3941B4D3ACD00DE2983 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				26D9B3951B4D3ACD00DE2983 /* OCFWebServer */,
+				263611401B53A14F00BAB9C5 /* fmdb */,
+				263611071B53642B00BAB9C5 /* GCDWebServer */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		26D9B3951B4D3ACD00DE2983 /* OCFWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				26D9B3961B4D3ACD00DE2983 /* OCFWebServer.h */,
-				26D9B3971B4D3ACD00DE2983 /* OCFWebServer.m */,
-				26D9B3981B4D3ACD00DE2983 /* OCFWebServerConnection.h */,
-				26D9B3991B4D3ACD00DE2983 /* OCFWebServerConnection.m */,
-				26D9B39A1B4D3ACD00DE2983 /* OCFWebServerPrivate.h */,
-				26D9B39B1B4D3ACD00DE2983 /* OCFWebServerRequest.h */,
-				26D9B39C1B4D3ACD00DE2983 /* OCFWebServerRequest.m */,
-				26D9B39D1B4D3ACD00DE2983 /* OCFWebServerRequest_Types.h */,
-				26D9B39E1B4D3ACD00DE2983 /* OCFWebServerResponse.h */,
-				26D9B39F1B4D3ACD00DE2983 /* OCFWebServerResponse.m */,
-			);
-			path = OCFWebServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,13 +382,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D9B3A11B4D3ACD00DE2983 /* OCFWebServerConnection.m in Sources */,
+				263611331B53642B00BAB9C5 /* GCDWebServerStreamedResponse.m in Sources */,
+				2636112E1B53642B00BAB9C5 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				2636114E1B53A14F00BAB9C5 /* FMDatabasePool.m in Sources */,
+				263611301B53642B00BAB9C5 /* GCDWebServerDataResponse.m in Sources */,
+				263611311B53642B00BAB9C5 /* GCDWebServerErrorResponse.m in Sources */,
+				2636114F1B53A14F00BAB9C5 /* FMDatabaseQueue.m in Sources */,
+				2636114C1B53A14F00BAB9C5 /* FMDatabase.m in Sources */,
+				2636114D1B53A14F00BAB9C5 /* FMDatabaseAdditions.m in Sources */,
+				263611271B53642B00BAB9C5 /* GCDWebServer.m in Sources */,
+				263611501B53A14F00BAB9C5 /* FMResultSet.m in Sources */,
+				263611561B53A26500BAB9C5 /* ConfigurationItems.m in Sources */,
+				263611321B53642B00BAB9C5 /* GCDWebServerFileResponse.m in Sources */,
 				2680AC031B4E599100D3E6C8 /* XCMainWindowController.m in Sources */,
+				263611291B53642B00BAB9C5 /* GCDWebServerFunctions.m in Sources */,
+				263611531B53A1BC00BAB9C5 /* ConfigurationItem.m in Sources */,
+				2636112B1B53642B00BAB9C5 /* GCDWebServerResponse.m in Sources */,
+				263611281B53642B00BAB9C5 /* GCDWebServerConnection.m in Sources */,
 				26D9B38B1B4D3AB100DE2983 /* XCServer.m in Sources */,
-				26D9B3A01B4D3ACD00DE2983 /* OCFWebServer.m in Sources */,
+				2636112F1B53642B00BAB9C5 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				2636112D1B53642B00BAB9C5 /* GCDWebServerFileRequest.m in Sources */,
+				2636112A1B53642B00BAB9C5 /* GCDWebServerRequest.m in Sources */,
 				26D9B38E1B4D3AB100DE2983 /* NSObject_Extension.m in Sources */,
-				26D9B3A21B4D3ACD00DE2983 /* OCFWebServerRequest.m in Sources */,
-				26D9B3A31B4D3ACD00DE2983 /* OCFWebServerResponse.m in Sources */,
+				2636112C1B53642B00BAB9C5 /* GCDWebServerDataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

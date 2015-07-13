@@ -7,28 +7,28 @@
 //
 
 #import "XCMainWindowController.h"
-#import "OCFWebServer.h"
-#import "OCFWebServerRequest.h"
-#import "OCFWebServerResponse.h"
-static OCFWebServer * server;
-@interface XCMainWindowController ()
+#import "GCDWebServer.h"
+#import "GCDWebServerRequest.h"
+#import "GCDWebServerDataResponse.h"
+#import "ConfigurationItems.h"
+#import "ConfigurationItem.h"
+static GCDWebServer * server;
+@interface XCMainWindowController ()<NSTableViewDelegate,NSTableViewDataSource>
 @property (weak) IBOutlet NSImageView *statusImageV;
 @property (weak) IBOutlet NSTextField *portTF;
 @property (nonatomic,assign) NSInteger port;
+@property (weak) IBOutlet NSTableView *testTabelView;
 @end
 
 @implementation XCMainWindowController
--(OCFWebServer *)server{
+-(GCDWebServer *)server{
     if (!server) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            server = [[OCFWebServer alloc]init];
-            [server addDefaultHandlerForMethod:@"GET"
-                                  requestClass:[OCFWebServerRequest class]
-                                  processBlock:^void(OCFWebServerRequest *request) {
-                                      OCFWebServerResponse *response = [OCFWebServerDataResponse responseWithText:@"{\"XCServer\":\"Hello World\"}"];
-                                      [request respondWith:response];
-                                  }];
+            server = [[GCDWebServer alloc]init];
+            [server addDefaultHandlerForMethod:@"GET" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
+                return [GCDWebServerDataResponse responseWithText:@"{\"XCServer\":\"helloworld\"}"];
+            }];
         });
      }
     return server;
@@ -47,7 +47,7 @@ static OCFWebServer * server;
             self.port = [self.portTF.stringValue integerValue];
             [self serverIsRunning:YES];
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                if(![self.server runWithPort:self.port]){
+                if(![self.server startWithPort:self.port bonjourName:@"XCServer"]){
                     dispatch_sync(dispatch_get_main_queue(), ^{
                         [self serverIsRunning:NO];
                         [self alertWithContent:@"start faild!"];
@@ -91,5 +91,32 @@ static OCFWebServer * server;
     }else{
         [self.statusImageV setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
     }
+}
+
+
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView{
+    return 8;
+}
+-(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
+    return 30;
+}
+-(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
+     NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    NSArray * itemsArr = ConfigurationItems.allIteams;
+    ConfigurationItem *item = [itemsArr objectAtIndex:row];
+    if ([tableColumn.title isEqualToString:@"id"]) {
+        [cellView.textField setStringValue:[NSString stringWithFormat:@"%ld",item.ID]];
+    }
+    if ([tableColumn.title isEqualToString:@"uri"]) {
+        [cellView.textField setStringValue:item.uri];
+    }
+    if ([tableColumn.title isEqualToString:@"responseType"]) {
+        [cellView.textField setStringValue:item.responseType];
+    }
+    if ([tableColumn.title isEqualToString:@"responseContent"]) {
+        [cellView.textField setStringValue:item.responseContent];
+    }
+    return cellView;
 }
 @end
