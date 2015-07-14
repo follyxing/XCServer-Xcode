@@ -22,7 +22,7 @@
             <value key="minSize" type="size" width="666" height="500"/>
             <value key="maxSize" type="size" width="666" height="270"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="666" height="500"/>
+                <rect key="frame" x="0.0" y="5" width="666" height="500"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRo-dr-VAD">
@@ -80,7 +80,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="W06-Pd-xJg" viewBased="YES" id="fXT-8V-Pnx">
-                                    <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="666" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -151,7 +151,7 @@
                                             </prototypeCellViews>
                                         </tableColumn>
                                         <tableColumn width="153.734375" minWidth="40" maxWidth="1000" id="ftd-Kd-8Fg">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="ResponseConten">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="ResponseContent">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -167,8 +167,8 @@
                                                     <rect key="frame" x="232" y="1" width="154" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8i3-mh-svO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8i3-mh-svO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="156" height="17"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="IkE-RK-JCn">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -176,6 +176,12 @@
                                                             </textFieldCell>
                                                         </textField>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="8i3-mh-svO" secondAttribute="trailing" id="0qs-dv-ea2"/>
+                                                        <constraint firstItem="8i3-mh-svO" firstAttribute="top" secondItem="0aw-ek-lYO" secondAttribute="top" id="MWY-5J-kS3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8i3-mh-svO" secondAttribute="bottom" id="QFV-bd-ZRr"/>
+                                                        <constraint firstItem="8i3-mh-svO" firstAttribute="leading" secondItem="0aw-ek-lYO" secondAttribute="leading" constant="2" id="Zea-sD-yau"/>
+                                                    </constraints>
                                                     <connections>
                                                         <outlet property="textField" destination="8i3-mh-svO" id="8FP-KR-Fyf"/>
                                                     </connections>
@@ -242,6 +248,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addResopnseBtnClicked:" target="-2" id="F8t-a9-5It"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

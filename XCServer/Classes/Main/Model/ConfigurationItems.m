@@ -11,8 +11,7 @@
 #import "ConfigurationItem.h"
 @implementation ConfigurationItems
 +(NSArray *)allIteams{
-#error 获取路径没改
-    NSString* path = [[NSBundle mainBundle]pathForResource:@"XCServer" ofType:@"db"];
+    NSString* path = [[NSBundle bundleForClass:[self class]]pathForResource:@"XCServer.db" ofType:nil];
     FMDatabase * db = [FMDatabase databaseWithPath:path];
     [db open];
     FMResultSet * resultSet = [db executeQuery:@"SELECT id,uri,responseType,responseContent,opt_date from conf_item"];
@@ -22,7 +21,7 @@
         item.ID = [resultSet intForColumn:@"id"];
         item.uri = [resultSet stringForColumn:@"uri"];
         item.responseType  =[ resultSet stringForColumn:@"responseType"];
-        item.responseContent = [resultSet stringForColumn:@"resopnseContent"];
+        item.responseContent = [resultSet stringForColumn:@"responseContent"];
         item.optDate = [resultSet intForColumn:@"opt_date"];
         [itemsArr addObject:item];
     }

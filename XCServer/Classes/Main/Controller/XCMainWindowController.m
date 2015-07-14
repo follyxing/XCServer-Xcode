@@ -12,12 +12,14 @@
 #import "GCDWebServerDataResponse.h"
 #import "ConfigurationItems.h"
 #import "ConfigurationItem.h"
+#import "TestWindow.h"
 static GCDWebServer * server;
 @interface XCMainWindowController ()<NSTableViewDelegate,NSTableViewDataSource>
 @property (weak) IBOutlet NSImageView *statusImageV;
 @property (weak) IBOutlet NSTextField *portTF;
 @property (nonatomic,assign) NSInteger port;
 @property (weak) IBOutlet NSTableView *testTabelView;
+@property (nonatomic,strong)TestWindow *tv;
 @end
 
 @implementation XCMainWindowController
@@ -29,9 +31,32 @@ static GCDWebServer * server;
             [server addDefaultHandlerForMethod:@"GET" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
                 return [GCDWebServerDataResponse responseWithText:@"{\"XCServer\":\"helloworld\"}"];
             }];
+            [self initData];
         });
      }
     return server;
+}
+- (IBAction)addResopnseBtnClicked:(id)sender {
+     self.tv= [[TestWindow alloc]initWithWindowNibName:@"TestWindow"];
+    [self.tv showWindow:self.tv];
+}
+
+-(void)initData{
+    NSArray * confArr = ConfigurationItems.allIteams;
+    for (ConfigurationItem * item in confArr) {
+        [self addHandlerWithMethod:@"GET" uri:item.uri responseDataType:item.responseType andResponseData:item.responseContent];
+    }
+}
+-(void)addHandlerWithMethod:(NSString *)method uri:(NSString *)uri responseDataType:(NSString *)type andResponseData:(NSString *)data{
+    if (!([method isEqualToString:@"GET"]||[method isEqualToString:@"POST"]))return;
+    
+    [server addHandlerForMethod:method path:uri requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
+        if([type isEqualToString:@"TEXT"]){
+            return [GCDWebServerDataResponse responseWithText:data];
+        }else{
+            return [GCDWebServerDataResponse responseWithHTML:data];
+        }
+    }];
 }
 -(void)windowWillLoad{
     [super windowWillLoad];
@@ -94,9 +119,8 @@ static GCDWebServer * server;
 }
 
 
-
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView{
-    return 8;
+    return [ConfigurationItems.allIteams count];
 }
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
     return 30;
@@ -105,18 +129,16 @@ static GCDWebServer * server;
      NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     NSArray * itemsArr = ConfigurationItems.allIteams;
     ConfigurationItem *item = [itemsArr objectAtIndex:row];
-    if ([tableColumn.title isEqualToString:@"id"]) {
-        [cellView.textField setStringValue:[NSString stringWithFormat:@"%ld",item.ID]];
-    }
-    if ([tableColumn.title isEqualToString:@"uri"]) {
+    if ([tableColumn.title isEqualToString:@"Uri"]) {
         [cellView.textField setStringValue:item.uri];
     }
-    if ([tableColumn.title isEqualToString:@"responseType"]) {
+    if ([tableColumn.title isEqualToString:@"ResponseType"]) {
         [cellView.textField setStringValue:item.responseType];
     }
-    if ([tableColumn.title isEqualToString:@"responseContent"]) {
+    if ([tableColumn.title isEqualToString:@"ResponseContent"]) {
         [cellView.textField setStringValue:item.responseContent];
     }
+    
     return cellView;
 }
 @end
